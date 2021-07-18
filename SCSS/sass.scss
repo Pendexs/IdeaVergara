@@ -1,0 +1,155 @@
+.nav {
+    margin:auto;
+    padding:0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(13, 7, 66, 0.356);
+    position: sticky; z-index:10000;
+    top:0;
+
+        &__Ul{
+                width: 100%;
+               display: flex;
+               flex-direction: row;
+               flex-wrap: nowrap;
+               justify-content: space-around;
+               align-items: center;
+        }
+
+        &__Li{
+            width: 80%;
+            list-style: none;
+        }
+
+        &__A{
+                color: #052b38;
+                font-family: Arial, Helvetica, sans-serif; 
+                text-decoration: none;
+                font-size: large;
+        }
+    
+}
+
+.encabezaReceta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        &__Titulo2{
+            color: #013243
+        }
+
+        &__img{
+            margin-top: 5%;
+            
+        }
+
+
+}
+
+
+.receta{ background-color: rgb(196, 194, 194);
+        width: 70%; 
+        border-top: 18px dotted rgb(134, 145, 114);
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-top: 15px;
+
+
+        &__Titulo3{color: darkslateblue;}
+
+        &__Titulo4{color: rgb(20, 99, 151);}
+
+        &__Ol{
+            list-style-type: upper-latin;
+        }
+
+        &__Ul{
+        list-style-type: circle;
+        }
+}
+
+.videos{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+
+    &__Disc {display: flex;
+        flex-direction: column;
+        grid-area: descripcion;
+        margin-left: 50px;
+        align-items: flex-start;
+    }
+
+     &__Titulo2{
+        background-image: url(./mult/burbuja2.png);
+    }
+
+    &__TamanoVideo{
+        width: 400px;
+        height: 290px;
+        margin-top: 15px;
+        grid-area: videos;
+        margin-left: 50px;
+    }
+
+    &__Parrafo{
+        font: small;
+    }
+
+    .videos__Articulo{
+        display: grid;
+        grid-template-columns: 100%; 
+        grid-template-rows: 25% 75% ;
+        grid-template-areas: "descripcion" 
+                            "videos"
+
+    }
+}
+
+
+        @media only screen and ( min-width: 600px ){
+            .videos{
+            display: grid;
+                flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            }
+
+            .videos__Disc {display: flex;
+                flex-direction: column;
+                grid-area: descripcion;
+
+
+            }
+
+
+            .videos__Titulo2{
+                background-image: url(./mult/burbuja2.png);
+                margin-top: 20px;
+            margin-bottom: 7px;}
+
+            .videos__TamanoVideo{
+                width: 600px;
+                height: 350px;
+                grid-area: videos;
+                margin-top: 50px;
+
+
+            }
+
+            .videos__Parrafo {
+                font-size: x-large;
+                margin-bottom: 55px;
+            }
+
+            .videos__Articulo{
+                display: grid;
+                grid-template-columns: 25% 75; 
+                grid-template-rows: 100% ;
+                grid-template-areas: "descripcion videos"
+            }
+        }
+
+
