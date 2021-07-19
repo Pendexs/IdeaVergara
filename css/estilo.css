@@ -91,6 +91,8 @@
 
         footer{color: dimgray;
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
                 margin-top: 40px;}
 
 
@@ -99,6 +101,11 @@
                 .transparante {
                         background-color: rgba(0, 255, 255, 0);
                 }
+
+                #transparante {
+                        background-color: rgba(0, 255, 255, 0);
+                }
+
 
         @media only screen and ( max-width: 750px ){
 
