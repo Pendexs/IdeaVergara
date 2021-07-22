@@ -558,7 +558,6 @@
         
         .contacto {
                 width: 100%;
-                height: 400px;
                 
                 display: flex;
                 flex-direction: row;
@@ -630,6 +629,15 @@
                 
         }
 
+
+        .ParrafoContacto{
+                color: #44220b;
+                font-family: 'Cardo', serif;
+                font-size: medium;
+                font-weight: normal;
+                letter-spacing: 3px;
+                text-align: center;
+            }
         
 
 
