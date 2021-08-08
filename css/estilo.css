@@ -97,6 +97,21 @@
 
 
 /*Seccion Home*/
+
+                .inicio {
+                        background-image: url(./mult/inicio.png);
+                        background-size:100% 100%;
+                        height: 312px;
+                        width: 600px;
+                        margin-top: 50px;
+
+                }
+                .pinic{
+                        color: #edeee4;
+                        width: 200px;
+                        float: right;
+                        margin-top: 30px;
+                }
         
                 .transparante {
                         background-color: rgba(0, 255, 255, 0);
@@ -127,7 +142,8 @@
                               
                 
                         }
-        
+          
+
                         .news {
                                 grid-area: news;
                                 justify-self: center;
@@ -194,6 +210,15 @@
                 
                 
                         }
+
+                        .inicio {
+                                background-image: url(./mult/inicio.png);
+                                background-size:100% 100%;
+                                height: 390px;
+                                width: 750px;
+                                margin-top: 50px;
+                        }
+        
         
         
                         .auspi{
@@ -250,6 +275,24 @@
                 
                 
                         }
+
+                        .inicio {
+                                background-image: url(./mult/inicio.png);
+                                background-size:100% 100%;
+                                height: 504px;
+                                width: 970px;
+                                margin-top: 50px;
+                        }
+
+                        .pinic{
+                                color: #edeee4;
+                                width: 200px;
+                                float: right;
+                                margin-top: 40px;
+                                margin-right: 20px;
+                                font-size: large;
+                        }
+        
                 
                                 .news {
                                         grid-area: news;
@@ -299,45 +342,6 @@
 /*Seccion Historia*/
 
 
-        @media only screen and ( max-width: 600px ){
-
-
-
-                
-                .videos {
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                        align-items: flex-start;
-
-                }
-
-                .videostamanoVideo {
-                        width: 400px;
-                        height: 290px;
-                        
-                }
-
-        }
-
-        @media only screen and ( min-width: 600px ){
-
-                .videos {
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                        
-                }
-                        
-
-
-                .tamanoVideo {
-                                width: 600px;
-                                height: 350px;
-                        }
-
-                }
 
 
 /*Seccion Origen*/
