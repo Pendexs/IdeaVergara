@@ -39,53 +39,69 @@
 
 <body>
     <h1>Contactanos</h1>
+
+        <main class="maincontacto">
           
-         
+
+
+        <div>    
+            <img class="fotocontacto" src="./mult/contacto.png" alt="">
+        </div>
+
              
-                <form class= "ParrafoContacto" action="" method="GET">
-                    <label for="nombreUsuario">Nombre</label>
-                    <input type="text" placeholder="INGRESE SU NOMBRE" id="nombreUsuario">
-                    <br>
-                    <br>
-                    <label for="apellidoUsuario">Apellido</label>
-                    <input type="text" placeholder="INGRESE SU APELLIDO" id="apellidoUsuario">
-                    <br>
-                    <br>
-                    <label for="mailUsuario">Mail</label>
-                    <input type="text" placeholder="INGRESE SU MAIL" id="mailUsuario">
-                    <br>
-                    <br>
-                    <label for="Comentario">Comentario</label>
-                    <textarea name="" id="Comentario" cols="30" rows="10"></textarea>
-                    <br>
-                    <br>
-                    Soy mayor de 18 años <input type="checkbox">
-                    <br>
-                    <br>
+            <form class="contacto" action="" method="GET">
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" value="" placeholder="Nombre">
+                </div>
+
+                <div>
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" value="" placeholder="Apellido">
+                </div>
+
+                <div>
+                    <label for="Mail">Mail</label>
+                    <input type="text" value="" placeholder="Mail">
+                </div>
+
+                <div>    
+                    <label for="Ubicacion">Ubicacion</label>
                     <select name="" id="">
-                        <option value="">CABA</option>
-                        <option value="">GBA Zona norte</option>
-                        <option value="">GBA Zona sur</option>
-                        <option value="">GBA Zona oeste</option>
-                    </select>
-                    <br>
-                    <br>
-                    <input type="submit"> 
+                    <option value="">CABA</option>
+                    <option value="">GBA Zona Norte</samp></option>
+                    <option value="">GBA Zona Oeste</option>
+                    <option value="">GBA Zona Sur</option>
+                    </select>  
+                </div> 
+
+                  
+                    <label for="Consulta">Consulta</label>
+                    <textarea placeholder="Consulta" name="Consulta" id="" cols="30" rows="10"></textarea> 
+                
+                    <div class="check">
+                    <p> Soy mayor de 18 años</p><input type="checkbox">
+                    </div>
+
+                    <input type="submit">       
                     <input type="reset">
                     <img class="mail" src="./mult/mail.png" alt="" width="40px">
-            </div>
                 
 
 
 
-         </form>
+            </form>
+        </main>
 
          <footer>  Copyright MancoBeer ® 
-            <div>
+            <div class="redes" >
                 <a href="https://www.instagram.com/"><img src="./mult/Foot/ig.png" alt="Instagram"></a>
                 <a href="https://www.facebook.com/"><img src="./mult/Foot/fb.png" alt="FaceBook"></a>
                 <a href="https://web.whatsapp.com/"><img src="./mult/Foot/wsp.png" alt="Whatsapp"></a>
             </div>
+
+
+        
         </footer>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 

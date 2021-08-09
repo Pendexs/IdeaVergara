@@ -50,10 +50,7 @@
 
 
 /*Clases*/
-        .gris{color: dimgray;
-                display: flex;
-                padding-top: 40px;
-        margin-top: 40px;} /* clase que da color gris claro FOOTER*/
+
         
         .backCerve {background-image: url(./mult/burbuja2.png);
                 background-repeat: no-repeat;}
@@ -89,11 +86,23 @@
                 margin-left: 50px;
                 }
 
-        footer{color: dimgray;
+        footer{
+                background-color: rgba(160, 178, 97, 0.935);
+                color: #20657c;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                margin-top: 40px;}
+                margin-top: 40px;
+                
+                }
+        .redes{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 120px;
+
+
+           }
 
 
 /*Seccion Home*/
@@ -121,7 +130,12 @@
                 #transparante {
                         background-color: rgba(0, 255, 255, 0);
                 }
-
+                
+                .card-text{
+                        color: #000000;
+                        font-family: Arial, Helvetica, sans-serif;
+                        text-decoration: none;
+                        font-size: large;                }
 
         @media only screen and ( max-width: 750px ){
 
@@ -146,7 +160,11 @@
 
                         .news {
                                 grid-area: news;
+                                display: flex;
+                                flex-direction: column;
                                 justify-self: center;
+                                align-items: center;
+                                align-content: center;
                                 font-size: small;
                                 font-weight: 50;
                                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -179,6 +197,13 @@
                         .trein{
                                 width: 50%;
                         }
+
+                        .ochen{
+                                width: 80%;
+                                margin: 40px;
+                                padding-top: 40px;
+                        }
+
         
                         .imgHome{
                                 width: 100%;
@@ -210,6 +235,15 @@
                 
                 
                         }
+
+
+                        .ochen{
+                                width: 99%;
+                                margin: 40px;
+                                padding-top: 40px;
+                                padding-right: 80px;
+                        }
+
 
                         .inicio {
                                 background-image: url(./mult/inicio.png);
@@ -276,6 +310,16 @@
                 
                         }
 
+
+                        .ochen{
+                                width: 80%;
+                                margin: 40px;
+                                padding-top: 40px;
+                                padding-right: 0px;
+
+                        }
+
+
                         .inicio {
                                 background-image: url(./mult/inicio.png);
                                 background-size:100% 100%;
@@ -297,6 +341,7 @@
                                 .news {
                                         grid-area: news;
                                         justify-self: center;
+                                        align-items: center;
                                         font-size: large;
                                         font-weight: 100;
                                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -559,27 +604,39 @@
 
 /*Contacto*/
         
-        
+        .maincontacto{
+                display: flex;
+                flex-direction: row;
+        }
+
+        .fotocontacto{
+                width: 100%;
+                height: 100%;
+
+        }
         .contacto {
                 width: 100%;
                 
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 flex-wrap: nowrap;
                 justify-content: space-around
     
                  }
 
-        .parteA {
-                display: flex;
-                flex-direction: column;
-                width: 300px;
-                justify-content: space-around;
-        }
+        .ParrafoContacto{
+        color: #44220b;
+        font-family: 'Cardo', serif;
+        font-size: medium;
+        font-weight: normal;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-right: 30px;
+        width: 90%;
+                    }        
 
-        .parteB{
-                display: flex;
-                flex-direction: column;
+        textarea{
+                margin-right: 10px;
         }
 
         .check {
@@ -606,7 +663,15 @@
                         }
                      }
                      
-        @media only screen and ( max-width: 600px ){
+        @media only screen and ( max-width: 800px ){
+
+                .maincontacto{
+                        display: flex;
+                        flex-direction: column-reverse;
+                }
+
+
+
 
                 .contacto {
                       
@@ -615,12 +680,13 @@
                         flex-direction: column;
                         align-items: center;
                         height: 800px;
+                        justify-content: space-evenly;
 
         
 
                          }
 
-                         input {
+                 input {
                         width: 50%;
                         margin-top: 10px;
                 }
@@ -634,14 +700,8 @@
         }
 
 
-        .ParrafoContacto{
-                color: #44220b;
-                font-family: 'Cardo', serif;
-                font-size: medium;
-                font-weight: normal;
-                letter-spacing: 3px;
-                text-align: center;
-            }
+
+
         
 
 
